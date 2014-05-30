@@ -1,0 +1,198 @@
+#-*- coding: utf-8 -*-
+
+
+VAT_PAGE_PRE = 'pre'
+VAT_PAGE_NEXT = 'next'
+
+VAT_THEAD_STATUS_NEW='New'
+VAT_THEAD_STATUS_RESERVE='Reserved'
+VAT_THEAD_STATUS_CONFIRMED='Confirmed'
+VAT_THEAD_STATUS_POST='Posted'
+VAT_THEAD_STATUS_CANCELLED='Cancelled'
+VAT_THEAD_STATUS_SAVE='Save'
+VAT_THEAD_STATUS_SUBMIT='Submit'
+VAT_THEAD_STATUS_APPROVE='Approved'
+VAT_THEAD_STATUS_LIST=('', VAT_THEAD_STATUS_NEW, VAT_THEAD_STATUS_RESERVE, VAT_THEAD_STATUS_APPROVE, VAT_THEAD_STATUS_SUBMIT, VAT_THEAD_STATUS_CONFIRMED, VAT_THEAD_STATUS_POST, VAT_THEAD_STATUS_CANCELLED)
+VAT_CHEAD_STATUS_NEW='New'
+VAT_CHEAD_STATUS_RESERVE='Reserved'
+VAT_CHEAD_STATUS_CONFIRMED='Confirmed'
+VAT_CHEAD_STATUS_POST='Posted'
+VAT_CHEAD_STATUS_CANCELLED='Cancelled'
+VAT_CHEAD_STATUS_SAVE = 'Save'
+VAT_CHEAD_STATUS_LIST=('', VAT_CHEAD_STATUS_NEW, VAT_CHEAD_STATUS_RESERVE, VAT_CHEAD_STATUS_CONFIRMED, VAT_CHEAD_STATUS_POST, VAT_CHEAD_STATUS_CANCELLED)
+
+
+ERP_TYPE_CN = '0'
+ERP_TYPE_HEAD = '1'
+ERP_TYPE_DETAIL = '2'
+ERP_TYPE_CHARGE = '3'
+ERP_TYPE_OTHER_CHARGE = '4'
+ERP_TYPE_PO_CHARGE = '5'
+
+ERP_HEAD_TYPE_SI='SI'
+ERP_HEAD_TYPE_SO='SO'
+ERP_HEAD_TYPE_THEAD='T_HEAD'
+ERP_HEAD_TYPE_CHEAD='C_HEAD'
+
+CHARGE_TYPE_T_SI='T_SI'
+CHARGE_TYPE_T_SO='T_SO'
+CHARGE_TYPE_T_RI='T_RI'
+CHARGE_TYPE_T_CUSTOMER='T_CUSTOMER'
+CHARGE_TYPE_T_MANUAL='T_MANUAL'
+CHARGE_TYPE_C_SI='C_SI'
+CHARGE_TYPE_C_SO='C_SO'
+CHARGE_TYPE_C_RI='C_RI'
+CHARGE_TYPE_C_CUSTOMER='C_CUSTOMER'
+CHARGE_TYPE_C_MANUAL='C_MANUAL'
+CHARGE_TYPE_T_ERP='T_ERP'
+CHARGE_TYPE_T_HAND='T_Manual'
+CHARGE_TYPE_C_ERP='C_ERP'
+CHARGE_TYPE_C_HAND='C_Manual'
+
+SEARCH_TYPE_SI='1'
+SEARCH_TYPE_SO='2'
+SEARCH_TYPE_MSIMSO='3'
+SEARCH_TYPE_MCN='4'
+EXPORT_DATA='5'
+
+QUERY_TYPE_EQ='1'
+QUERY_TYPE_MATCH='2'
+QUERY_TYPE_LIKE='3'
+QUERY_TYPE_IN='4'
+QUERY_TYPE_NOT_IN='5'
+QUERY_TYPE_DATE='6'
+QUERY_TYPE_ORDER_BY='7'
+QUERY_TYPE_LIKE_AND_OR='8'
+QUERY_TYPE_NOT_EQ='9'
+QUERY_TYPE_NOT_NULL='10'
+QUERY_TYPE_CREATE_BY='11'
+QUERY_TYPE_COMPANY_CODE='12'
+
+COMPANY_CODE_EU='RPACPACKEU'
+COMPANY_CODE_SZ='RPACSZ'
+COMPANY_CODE_SH='RPACPACK'
+COMPANY_CODE = [COMPANY_CODE_SZ, COMPANY_CODE_SH]
+COMPANY_CODE_STR = "('%s', '%s')" % (COMPANY_CODE_SZ, COMPANY_CODE_SH)
+
+ERP_HEAD_TYPE_PI='PI'
+ERP_HEAD_TYPE_PO='PO'
+ERP_HEAD_TYPE_MF='MF'
+ERP_HEAD_TYPE_NMF='NMF'
+ERP_HEAD_TYPE_CST='CST'
+ERP_HEAD_TYPE_CCN='CCN'
+ERP_HEAD_TYPE_ST='ST'
+ERP_HEAD_TYPE_DN='DN'
+
+SEARCH_TYPE_PI='1'
+SEARCH_TYPE_PO='2'
+SEARCH_TYPE_PSIPSO='3'
+SEARCH_TYPE_MSN='4'
+SEARCH_TYPE_EXCEL='5'
+SEARCH_TYPE_MF='6'
+SEARCH_TYPE_CST='7'
+SEARCH_TYPE_CCN='8'
+SEARCH_TYPE_CHARGE='9'
+SEARCH_TYPE_GROUP_SI='10'
+SEARCH_TYPE_GROUP_SO='11'
+SEARCH_TYPE_VARIANCE='12'
+
+CHARGE_TYPE_P_PI='P_PI'
+CHARGE_TYPE_P_PO='P_PO'
+CHARGE_TYPE_P_PRI='P_PRI'
+
+CHARGE_TYPE_S_PI='S_PI'
+CHARGE_TYPE_S_PO='S_PO'
+CHARGE_TYPE_S_PRI='S_PRI'
+
+CHARGE_TYPE_S_MF='MF'
+CHARGE_TYPE_S_NMF='NMF'
+
+
+CHARGE_TYPE_P_MAN='P_Manual'
+CHARGE_TYPE_P_ERP='P_ERP'
+CHARGE_TYPE_S_MAN='S_Manual'
+CHARGE_TYPE_S_ERP='S_ERP'
+CHARGE_TYPE_PM_MAN='PM_Manual'
+CHARGE_TYPE_PM_ERP='PM_ERP'
+CHARGE_TYPE_SM_MAN='SM_Manual'
+CHARGE_TYPE_SM_ERP='SM_ERP'
+
+IMPORT_STATEMENT_YES = '1'
+IMPORT_STATEMENT_NO  = '2'
+
+ITEM_CODE_YES = '1'
+ITEM_CODE_NO = '2'
+
+SI_HEAD_REDIRCT = 'redirct'
+
+CHARGE_TYPE_A = [CHARGE_TYPE_P_PI, CHARGE_TYPE_P_PRI]
+CHARGE_TYPE_B = [CHARGE_TYPE_S_PI, CHARGE_TYPE_S_PRI]
+
+CHARGE_TYPE_P = [CHARGE_TYPE_P_ERP, CHARGE_TYPE_P_MAN]
+CHARGE_TYPE_S = [CHARGE_TYPE_S_ERP, CHARGE_TYPE_S_MAN]
+CHARGE_TYPE_PM = [CHARGE_TYPE_PM_MAN, CHARGE_TYPE_PM_ERP]
+CHARGE_TYPE_SM = [CHARGE_TYPE_SM_MAN, CHARGE_TYPE_SM_ERP]
+CHARGE_TYPE_M_MAN = [CHARGE_TYPE_PM_MAN, CHARGE_TYPE_PM_ERP, CHARGE_TYPE_SM_MAN, CHARGE_TYPE_SM_ERP]
+
+SEARCH_TYPE_EXCEL_STATUS=('', 'complete', 'uncomplete')
+
+
+CHARGE_CODE_TAX = u'\u589e\u503c\u7a0e'
+
+CHARGE_CODES = {
+        "DISCOUNT":["DISCOUNT", "discount"],
+        "FREIGHT CHARGE":["FREIGHT CHARGE", "freight charge"],
+        "MOULD CHARGE":["MOULD CHARGE", "moudle charge"],
+        "VAT":["VAT", "vat"],
+        "discount":["DISCOUNT", "discount"],
+        "freight charge":["FREIGHT CHARGE", "freight charge"],
+        "vat":["VAT", "vat"],
+        "moudle charge":["DISCOUNT","discount",u'MOULD CHARGE-\u61c9\u4ed8',u'MOULD CHARGE-\u5e94\u4ed8'],
+        u'MOULD CHARGE-\u5e94\u4ed8':["DISCOUNT","discount",u'MOULD CHARGE-\u61c9\u4ed8',u'MOULD CHARGE-\u5e94\u4ed8'],
+        u'MOULD CHARGE-\u61c9\u4ed8':["DISCOUNT","discount",u'MOULD CHARGE-\u61c9\u4ed8',u'MOULD CHARGE-\u5e94\u4ed8'],
+        
+        u'\u904b\u8f38\u8cbb':[u'\u904b\u8f38\u8cbb-\u61c9\u4ed8',u'\u8fd0\u8f93\u8d39-\u5e94\u4ed8',u'\u904b\u8f38\u8cbb',u'\u8fd0\u8f93\u8d39'],
+        u'\u904b\u8f38\u8cbb-\u61c9\u4ed8':[u'\u904b\u8f38\u8cbb-\u61c9\u4ed8',u'\u8fd0\u8f93\u8d39-\u5e94\u4ed8',u'\u904b\u8f38\u8cbb',u'\u8fd0\u8f93\u8d39'],
+    
+        u'\u8fd0\u8f93\u8d39':[u'\u904b\u8f38\u8cbb-\u61c9\u4ed8',u'\u8fd0\u8f93\u8d39-\u5e94\u4ed8',u'\u904b\u8f38\u8cbb',u'\u8fd0\u8f93\u8d39'],
+        u'\u8fd0\u8f93\u8d39-\u5e94\u4ed8':[u'\u904b\u8f38\u8cbb-\u61c9\u4ed8',u'\u8fd0\u8f93\u8d39-\u5e94\u4ed8',u'\u904b\u8f38\u8cbb',u'\u8fd0\u8f93\u8d39'],
+        
+        u'\u6298\u6263':[u'\u6298\u6263-\u61c9\u4ed8',u'\u6298\u6263-\u5e94\u4ed8',u'\u6298\u6263'],
+        u'\u6298\u6263-\u5e94\u4ed8':[u'\u6298\u6263-\u61c9\u4ed8',u'\u6298\u6263-\u5e94\u4ed8',u'\u6298\u6263'],
+        u'\u6298\u6263-\u61c9\u4ed8':[u'\u6298\u6263-\u61c9\u4ed8',u'\u6298\u6263-\u5e94\u4ed8',u'\u6298\u6263'],
+        
+        u'\u5176\u4ed6\u8d39\u7528':[u'\u5176\u4ed6\u8cbb\u7528-\u61c9\u4ed8',u'\u5176\u4ed6\u8d39\u7528-\u5e94\u4ed8',u'\u5176\u4ed6\u8cbb\u7528',u'\u5176\u4ed6\u8d39\u7528'],
+        u'\u5176\u4ed6\u8d39\u7528-\u5e94\u4ed8':[u'\u5176\u4ed6\u8cbb\u7528-\u61c9\u4ed8',u'\u5176\u4ed6\u8d39\u7528-\u5e94\u4ed8',u'\u5176\u4ed6\u8cbb\u7528',u'\u5176\u4ed6\u8d39\u7528'],
+        u'\u5176\u4ed6\u8cbb\u7528':[u'\u5176\u4ed6\u8cbb\u7528-\u61c9\u4ed8',u'\u5176\u4ed6\u8d39\u7528-\u5e94\u4ed8',u'\u5176\u4ed6\u8cbb\u7528',u'\u5176\u4ed6\u8d39\u7528'],
+        u'\u5176\u4ed6\u8cbb\u7528-\u61c9\u4ed8':[u'\u5176\u4ed6\u8cbb\u7528-\u61c9\u4ed8',u'\u5176\u4ed6\u8d39\u7528-\u5e94\u4ed8',u'\u5176\u4ed6\u8cbb\u7528',u'\u5176\u4ed6\u8d39\u7528'],
+        
+        u'\u589e\u503c\u7a0e':[u'\u589e\u503c\u7a0e',u'\u589e\u503c\u7a0e-\u5e94\u4ed8',u'\u589e\u503c\u7a05',u'\u589e\u503c\u7a05-\u61c9\u4ed8'],
+        u'\u589e\u503c\u7a0e-\u5e94\u4ed8':[u'\u589e\u503c\u7a0e',u'\u589e\u503c\u7a0e-\u5e94\u4ed8',u'\u589e\u503c\u7a05',u'\u589e\u503c\u7a05-\u61c9\u4ed8'],
+        u'\u589e\u503c\u7a05':[u'\u589e\u503c\u7a0e',u'\u589e\u503c\u7a0e-\u5e94\u4ed8',u'\u589e\u503c\u7a05',u'\u589e\u503c\u7a05-\u61c9\u4ed8'],
+        u'\u589e\u503c\u7a05-\u61c9\u4ed8':[u'\u589e\u503c\u7a0e',u'\u589e\u503c\u7a0e-\u5e94\u4ed8',u'\u589e\u503c\u7a05',u'\u589e\u503c\u7a05-\u61c9\u4ed8'],
+        
+        u'\u5236\u7248\u8d39':[u'\u5236\u7248\u8d39',u'\u5236\u7248\u8d39-\u5e94\u4ed8',u'\u88fd\u7248\u8cbb',u'\u88fd\u7248\u8cbb-\u61c9\u4ed8'],
+        u'\u5236\u7248\u8d39-\u5e94\u4ed8':[u'\u5236\u7248\u8d39',u'\u5236\u7248\u8d39-\u5e94\u4ed8',u'\u88fd\u7248\u8cbb',u'\u88fd\u7248\u8cbb-\u61c9\u4ed8'],
+        u'\u88fd\u7248\u8cbb':[u'\u5236\u7248\u8d39',u'\u5236\u7248\u8d39-\u5e94\u4ed8',u'\u88fd\u7248\u8cbb',u'\u88fd\u7248\u8cbb-\u61c9\u4ed8'],
+        u'\u88fd\u7248\u8cbb-\u61c9\u4ed8':[u'\u5236\u7248\u8d39',u'\u5236\u7248\u8d39-\u5e94\u4ed8',u'\u88fd\u7248\u8cbb',u'\u88fd\u7248\u8cbb-\u61c9\u4ed8'],
+        
+        u'\u589e\u503c\u7a05':[u'\u589e\u503c\u7a05',u'\u589e\u503c\u7a05-\u61c9\u4ed8' ,u'\u589e\u503c\u7a0e-\u5e94\u4ed8', u'\u589e\u503c\u7a0e'],
+        u'\u589e\u503c\u7a05-\u61c9\u4ed8':[u'\u589e\u503c\u7a05',u'\u589e\u503c\u7a05-\u61c9\u4ed8' ,u'\u589e\u503c\u7a0e-\u5e94\u4ed8', u'\u589e\u503c\u7a0e'],
+        u'\u589e\u503c\u7a0e-\u5e94\u4ed8':[u'\u589e\u503c\u7a05',u'\u589e\u503c\u7a05-\u61c9\u4ed8' ,u'\u589e\u503c\u7a0e-\u5e94\u4ed8', u'\u589e\u503c\u7a0e'],
+        u'\u589e\u503c\u7a0e':[u'\u589e\u503c\u7a05',u'\u589e\u503c\u7a05-\u61c9\u4ed8' ,u'\u589e\u503c\u7a0e-\u5e94\u4ed8', u'\u589e\u503c\u7a0e']
+    }
+
+TAX_RAX = "TAX_PERCENTAGE"
+CHARGE_OTHER_CHARGE = "CHARGE_OTHER_CHARGE"
+TAX_PERCENTAGE = 0.17
+TAX_CHARGE_CODE=[unicode('��ֵ��', 'gbk'), unicode('��ֵ��������', 'gbk')]
+TAX_RATE_MESSAGE = " Cant't get the tax rate exactly from ERP, please save and modify it!"
+TAX_ERROR = 0.05
+TAX_PERCENTAGE_LIST = [0.17, 0.06, 0.03]
+SUPPLIER_PERCENTAGE_LIST = ['202E00002', '212J00005', '212M00008', '212A00006', '212B00010', '212D00039']
+IMP_TYPE = 2
+TAX_PERCENTAGE_SUPPLIER = ['212E00002', '212J00005', '212M00008', '212A00006', '212B00010', '212D00039']
+TAX_PERCENTAGE_SUPPLIER_0 = ['212H00014', '212R00001', '212R00004', '212R00005', '212U00002']
+CREATE_NEW_PI = 1
+
+
